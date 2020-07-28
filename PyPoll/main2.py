@@ -12,27 +12,17 @@ with open(csvpath, newline="") as csvfile:
     # first_row = next(csv_reader)
 
 # Lists to store data
-    voter_list=[]
-    county_list=[]
     candidate_list=[]
+    votes = 0
 
 # loop through data for votes
-    for row in csv_reader:
-        voter_list.append(row[0])
-
-
-
-        county_list.append(row[1])
+    for votes in csv_reader:
         candidate_list.append(row[2])
+        votes = votes+1
+        candidates=[]
     # print(voter_list)
 
-    # Print number of months
-    total_votes = len(voter_list)
-    print (f"Total number of votes: {total_votes}"\n)
-    
-
-
-    for row in csv_reader:
-        if row[2] not in candidate_list:
-            candidate_list.apend(row[2])
-    print (f"These are the name of all candidates: {candidate_list}")
+    if candidate_list not in canidates:
+        canidates.append(candidate_list)
+        votes[candidate_list]=votes[candidate_list]+1
+    print(votes)
