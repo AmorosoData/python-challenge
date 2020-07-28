@@ -1,0 +1,5 @@
+Election Resultes
+______________________
+Total Votes: 3521001
+Name: ['Khan', 'Correy', 'Li', "O'Tooley"] [0.0, 0.0, 0.0, 0.0], [0, 0, 0, 1]
+Winner: O'Tooley
